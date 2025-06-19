@@ -24,5 +24,6 @@ jobs:
           host: ${{ secrets.SERVER_IP }}
           username: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "build/*"
+          source: "build/"
           target: "/var/www/cosmeticcenter/build"
+          strip_components: 1
