@@ -21,7 +21,7 @@ const Prp = () => {
         contains proteins that support cell growth. Researchers have produced
         PRP by isolating plasma from blood and concentrating it.
       </p>
-      <img src={prpimg2} className="centered-image w-2/6" />
+      <img src={prpimg2} className="centered-image w-2/6" alt="PRP"/>
       <p className="custom-p">
         The idea is that injecting PRP into damaged tissues will stimulate your
         body to grow new, healthy cells and promote healing. Because the tissue
@@ -45,7 +45,7 @@ const Prp = () => {
         problems, such as tennis elbow, Achilles tendonitis at the ankle, and
         jumper’s knee, or pain in the patellar tendon in the knee.
       </p>
-      <img src={prpimg3} className="centered-image w-2/6" />
+      <img src={prpimg3} className="centered-image w-2/6" alt="PRP" />
 
       <p className="custom-p">
         <strong>Acute injuries: </strong> Doctors have used PRP injections to
@@ -56,7 +56,7 @@ const Prp = () => {
         tendon in the shoulder) or ligaments (such as the anterior cruciate
         ligament, or ACL).
       </p>
-      <img src={prpimg4} className="centered-image w-2/6" />
+      <img src={prpimg4} className="centered-image w-2/6" alt="PRP" />
 
       <p className="custom-p">
         <strong>Osteoarthritis </strong> Doctors have injected PRP into the
@@ -110,7 +110,7 @@ const Prp = () => {
         You should discuss these potential risks with your doctor, as well as
         the steps your doctor will take to minimize these risks.
       </p>
-      <img src={prpimg5} className="centered-image w-2/6" />
+      <img src={prpimg5} className="centered-image w-2/6" alt="PRP" />
 
       <h2 className="custom-h2">
         What is the recovery time for PRP injections?
@@ -138,7 +138,7 @@ const Prp = () => {
         </li>
       </ul>
       <h2 className="custom-h2"> Hair Growth</h2>
-      <img src={prpimg6} className="centered-image w-2/6" />
+      <img src={prpimg6} className="centered-image w-2/6" alt="PRP" />
 
       <h2 className="custom-h2"> Key Benefits</h2>
       <ul className="custom-list">
@@ -153,8 +153,8 @@ const Prp = () => {
         </li>
       </ul>
       <h2 className="custom-h2">XCELLARISPRO – Hair Growth Kit</h2>
-      <img src={prpimg7} className="centered-image w-2/6" />
-      <img src={prpimg8} className="centered-image w-3/6" />
+      <img src={prpimg7} className="centered-image w-2/6" alt="PRP" />
+      <img src={prpimg8} className="centered-image w-3/6" alt="PRP" />
 
       <h2 className="custom-h2"> Product Details</h2>
       <ul className="custom-list">
@@ -171,7 +171,7 @@ const Prp = () => {
           blockers, antioxidants and scalp-rejuvenation agents
         </li>
       </ul>
-      <img src={prpimg9} className="centered-image w-1/6" />
+      <img src={prpimg9} className="centered-image w-1/6" alt="PRP" />
     </div>
   );
 };

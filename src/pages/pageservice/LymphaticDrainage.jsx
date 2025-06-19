@@ -51,7 +51,7 @@ const LymphaticDrainage = () => {
         Experience the power of natural detox and sculpting with this gentle yet
         effective facial massage.
       </p>
-      <img src={Lymphatic1} className="centered-image w-80" />
+      <img src={Lymphatic1} className="centered-image w-2/6" alt="Lymphatic" />
     </div>
   );
 };

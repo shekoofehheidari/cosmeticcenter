@@ -22,13 +22,13 @@ const MicroNeedling = () => {
         of your skin by removing the wrinkles, scars and stretch marks that can
         make you look younger as you age.
       </p>
-      <img src={Needlingimg1} className="centered-image w-1/2" />
+      <img src={Needlingimg1} className="centered-image w-1/2" alt="Needling" />
       <p className="custom-p">
         Additionally, microneedling is not restricted to the face. It can be
         used on many other body parts, such as arms, legs, neck, back, hands and
         abdomen.
       </p>
-      <img src={Needlingimg2} className="centered-image w-1/2" />
+      <img src={Needlingimg2} className="centered-image w-1/2" alt="Needling" />
       <p className="custom-p">
         One microneedling session generally takes 30 minutes. At first, your
         skin will appear a little bit red — similar to a light sunburn, but your
@@ -37,7 +37,7 @@ const MicroNeedling = () => {
         months. This treatment is not designed to be an “instant fix,” but is
         intended to improve the health of your skin in the long term.
       </p>
-      <img src={Needlingimg3} className="centered-image w-1/2" />
+      <img src={Needlingimg3} className="centered-image w-1/2" alt="Needling"/>
       <h3 className="custom-h3">
         {" "}
         How many numbers of treatments does one need?
@@ -59,10 +59,10 @@ const MicroNeedling = () => {
         treatments are minimal. After a treatment, dry skin or red discoloration
         may occur, which will typically subside within a week{" "}
       </p>
-      <img src={Needlingimg4} className="centered-image w-1/3" />
-      <img src={Needlingimg5} className="centered-image w-1/3" />
-      <img src={Needlingimg6} className="centered-image w-1/3" />
-      <img src={Needlingimg7} className="centered-image w-1/3" />
+      <img src={Needlingimg4} className="centered-image w-1/3" alt="Needling" />
+      <img src={Needlingimg5} className="centered-image w-1/3" alt="Needling" />
+      <img src={Needlingimg6} className="centered-image w-1/3" alt="Needling" />
+      <img src={Needlingimg7} className="centered-image w-1/3" alt="Needling" />
       <h3 className="custom-h3">
         What skin conditions can be treated with micro needling?
       </h3>

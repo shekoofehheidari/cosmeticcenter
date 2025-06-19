@@ -16,7 +16,7 @@ const BuccalMassage = () => {
         nasolabial folds, improving circulation and promoting a natural lifting
         effect.
       </p>
-      <img src={buccalimg1} className="centered-image w-80" />
+      <img src={buccalimg1} className="centered-image w-80" alt="Buccal" />
 
       <h2 className="custom-h2">Benefits of Buccal Massage:</h2>
       <ul className="ul.no-bullets">

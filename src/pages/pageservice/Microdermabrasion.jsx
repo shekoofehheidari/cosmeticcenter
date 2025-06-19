@@ -18,7 +18,7 @@ const Microdermabrasion = () => {
         condition(s) ensuring a youthful appearance is right around the corner
         with the help of this clinic.
       </p>
-      <img src={Dermabrasionimg2} className="centered-image w-2/6" />
+      <img src={Dermabrasionimg2} className="centered-image w-2/6" alt="Dermabrasion" />
 
       <h2 className="custom-h2">Benefits of Microdermabrasion :</h2>
       <p className="custom-p">
@@ -27,7 +27,7 @@ const Microdermabrasion = () => {
         This treatment offers a plethora of benefits to help rejuvenate and
         reinvigorate skin cells.
       </p>
-      <img src={Dermabrasionimg3} className="centered-image w-2/6" />
+      <img src={Dermabrasionimg3} className="centered-image w-2/6" alt="Dermabrasion" />
 
       <h2 className="custom-h2">Additional benefits include:</h2>
       <ul className="custom-list">
@@ -45,7 +45,7 @@ const Microdermabrasion = () => {
         due to its consistency, efficiency, and overall quality.
       </p>
 
-      <img src={Dermabrasionimg4} className="centered-image w-2/6" />
+      <img src={Dermabrasionimg4} className="centered-image w-2/6" alt="Dermabrasion" />
 
       <h2 className="custom-h2">Treatment</h2>
       <p className="custom-p">
@@ -94,7 +94,7 @@ const Microdermabrasion = () => {
         all relevant equipment. This speeds up the process and ensures
         everything is done in accordance to industry standards.
       </p>
-      <img src={Dermabrasionimg5} className="centered-image w-3/6" />
+      <img src={Dermabrasionimg5} className="centered-image w-3/6" alt="Dermabrasion" />
 
       <h2 className="custom-h2">Ideal Candidate</h2>
       <p className="custom-p">

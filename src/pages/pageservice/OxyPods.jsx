@@ -22,7 +22,7 @@ const OxyPods = () => {
         and that means: MAXIMUM FRESHNESS • MAXIMUM PERFORMANCE • LONGER-LASTING
         RESULTS.
       </p>
-      <img src={Oxypodsimg2} className="centered-image w-2/3" />
+      <img src={Oxypodsimg2} className="centered-image w-2/3" alt="Oxypods" />
       <h2 className="custom-h2">
         Two Specialized Formulas to Treat Specific Skin Conditions
       </h2>
@@ -53,7 +53,7 @@ const OxyPods = () => {
           <li> Detoxifying serum infusion </li>
         </ul>
         <span>
-          <img src={Oxypodsimg3} className="centered-image w-auto" />
+          <img src={Oxypodsimg3} className="centered-image w-auto" alt="Oxypods"/>
         </span>
       </div>
       <h3 className="custom-h3">DETOX</h3>
@@ -72,7 +72,7 @@ const OxyPods = () => {
           <li>Detoxifying serum infusio</li>
         </ul>
         <span>
-          <img src={Oxypodsimg4} className="centered-image w-auto" />
+          <img src={Oxypodsimg4} className="centered-image w-auto" alt="Oxypods"/>
         </span>
       </div>
       <h3 className="custom-h3">HYDRATE</h3>
@@ -91,7 +91,7 @@ const OxyPods = () => {
           <li>Hydrating serum infusion</li>
         </ul>
         <span>
-          <img src={Oxypodsimg5} className="centered-image w-auto" />
+          <img src={Oxypodsimg5} className="centered-image w-auto" alt="Oxypods" />
         </span>
       </div>
       <h3 className="custom-h3">ILLUMINATE</h3>
@@ -110,7 +110,7 @@ const OxyPods = () => {
           <li>Illuminating serum infusion</li>
         </ul>
         <span>
-          <img src={Oxypodsimg6} className="centered-image w-auto" />
+          <img src={Oxypodsimg6} className="centered-image w-auto" alt="Oxypods" />
         </span>
       </div>
       <h3 className="custom-h3">BALANCE</h3>
@@ -129,7 +129,7 @@ const OxyPods = () => {
           <li>Balancing serum infusion</li>
         </ul>
         <span>
-          <img src={Oxypodsimg7} className="centered-image w-auto" />
+          <img src={Oxypodsimg7} className="centered-image w-auto" alt="Oxypods" />
         </span>
       </div>
       <h3 className="custom-h3">REVIVE</h3>
@@ -148,7 +148,7 @@ const OxyPods = () => {
           <li>Reviving serum infusion</li>
         </ul>
         <span>
-          <img src={Oxypodsimg8} className="centered-image w-auto" />
+          <img src={Oxypodsimg8} className="centered-image w-auto" alt="Oxypods" />
         </span>
       </div>
       <h3 className="custom-h3">Geneo OXYPODS</h3>
@@ -235,7 +235,7 @@ const OxyPods = () => {
         innovative Geneo OxyPods technology, combining breakthrough concepts in
         biology, chemistry, and technology within a single capsule.
       </p>
-      <img src={Oxypodsimg9} className="centered-image w-2/6" />
+      <img src={Oxypodsimg9} className="centered-image w-2/6" alt="Oxypods"/>
 
       <h3 className="custom-h3">
         The Geneo Hydrating OxyPod includes Blue Spirulina, Niacinamide and
@@ -282,7 +282,7 @@ const OxyPods = () => {
       <h3 className="custom-h3">
         The ultrasound hand piece achieves superior infusion by:
       </h3>
-      <img src={Oxypodsimg10} className="centered-image w-2/6" />
+      <img src={Oxypodsimg10} className="centered-image w-2/6" alt="Oxypods" />
       <ul className="custom-list">
         <li>Increasing the permeability of the skin</li>
         <li>Breaking down the long nutrient molecules into shorter ones</li>
@@ -291,7 +291,7 @@ const OxyPods = () => {
           better results
         </li>
       </ul>
-      <img src={Oxypodsimg11} className="centered-image w-2/6" />
+      <img src={Oxypodsimg11} className="centered-image w-2/6" alt="Oxypods" />
 
       <p className="custom-p">
         The Oxypods is now available with TriPollar® technology, the 3rd and

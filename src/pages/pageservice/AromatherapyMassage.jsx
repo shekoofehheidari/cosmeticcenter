@@ -12,7 +12,7 @@ const AromatherapyMassage = () => {
         essential oils with massage to bring about positive physical and
         psychological effects,
       </p>
-      <img src={Aromatherapyimg2} className="centered-image w-auto" />
+      <img src={Aromatherapyimg2} className="centered-image w-auto" alt="Aromatherapy"/>
 
       <h2 className="custom-h2">What is Aromatherapy Massage?</h2>
       <p className="custom-p">
@@ -40,7 +40,7 @@ const AromatherapyMassage = () => {
         through your nose or putting them on your skin. Some people put the oils
         on their skin when they get a massage or take a bath.
       </p>
-      <img src={Aromatherapyimg3} className="centered-image w-2/5" />
+      <img src={Aromatherapyimg3} className="centered-image w-2/5" alt="Aromatherapy" />
 
       <h2 className="custom-h2">What Are Essential Oils?</h2>
       <p className="custom-p">

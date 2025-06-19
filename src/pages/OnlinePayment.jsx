@@ -42,7 +42,7 @@ const OnlinePayment = () => {
       <Link to="https://checkout.square.site/merchant/8XPNZYF27AWK8/checkout/XFMXDUYBXB3OROXNTTDYVXHL">
         <img
           src={checkoutqrcode}
-          alt="Bcheckout-link-qr-code"
+          alt="checkout-link-qr-code"
           className="centered-image w-2/12"
         />
       </Link>

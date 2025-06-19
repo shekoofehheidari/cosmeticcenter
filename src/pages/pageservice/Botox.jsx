@@ -61,7 +61,6 @@ const BotoxService = () => {
       </p>
 
       <img src={botox2} alt="Botox treatment" className="centered-image" />
-      <img src={botox2} alt="Botox treatment" className="centered-image" />
 
       <p className="custom-p">
         Once the patient is seated, a topical anesthetic is applied to the

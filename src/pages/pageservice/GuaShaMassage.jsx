@@ -50,7 +50,7 @@ const GuaShaMassage = () => {
         Experience the power of ancient beauty techniques for a naturally lifted
         and glowing complexion.
       </p>
-      <img src={guashaimg1} className="centered-image w-80" />
+      <img src={guashaimg1} className="centered-image w-80" alt="Guasha Massage" />
     </div>
   );
 };

@@ -47,7 +47,7 @@ const DermalFiller = () => {
         specialist will take these into account before pinpointing key target
         regions around the face.
       </p>
-      <img src={Dermalfillerimg2} className="centered-image w-3/6" />
+      <img src={Dermalfillerimg2} className="centered-image w-3/6" alt="Dermal filler" />
       <h2 className="custom-h2"> What are some of the injection areas?</h2>
       <ul className="custom-list">
         <li>Under Eyes</li>
@@ -86,7 +86,7 @@ const DermalFiller = () => {
         procedure and your trained professional will use his/her years of
         experience to offer a picture-perfect finish.
       </p>
-      <img src={Dermalfillerimg3} className="centered-image w-3/6" />
+      <img src={Dermalfillerimg3} className="centered-image w-3/6" alt="Dermal filler" />
       <p className="custopm-p">
         To schedule your no-obligation consultation, call in and book a meeting
         with one of the clinic’s top-tier specialists. The consultation will

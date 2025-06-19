@@ -1,8 +1,8 @@
 import React from "react";
 import "./servicestyle.css";
-import hairremoval1 from "../../assets/images/serviceimage/hairremoval1.avif";
-import hairremoval2 from "../../assets/images/serviceimage/hairremoval2.jpg";
-import hairremoval3 from "../../assets/images/serviceimage/hairremoval3.jpg";
+import hairremovalimg1 from "../../assets/images/serviceimage/hairremoval1.avif";
+import hairremovalimg2 from "../../assets/images/serviceimage/hairremoval2.jpg";
+import hairremovalimg3 from "../../assets/images/serviceimage/hairremoval3.jpg";
 
 const HairRemoval = () => {
   return (
@@ -52,7 +52,7 @@ const HairRemoval = () => {
           the laser in constant motion ensuring full coverage.
         </p>
 
-        <img src={hairremoval1} className="centered-image w-2/5" />
+        <img src={hairremovalimg1} className="centered-image w-2/5" alt="Hair Removal"/>
 
         <h1 className="custom-h2">What is Soprano ICE ?</h1>
         <p className="custom-p">
@@ -82,7 +82,7 @@ const HairRemoval = () => {
           for both men and women, at competitive prices.
         </p>
         <h1 className="custom-h2">Soprano ICE FAQ 1 – What is Soprano ICE?</h1>
-        <img src={hairremoval2} className="centered-image" />
+        <img src={hairremovalimg2} className="centered-image" alt="Hair Removal"/>
         <p className="custom-p">
           Soprano ICE is the latest generation of the award-winning Soprano
           laser hair removal system. It is the most complete and effective laser
@@ -227,7 +227,7 @@ const HairRemoval = () => {
           numbing cream by the application or by the tube.
         </p>
 
-        <img src={hairremoval3} className="centered-image" />
+        <img src={hairremovalimg3} className="centered-image" alt="Hair Removal" />
 
         <h1 className="custom-h2">Pre Treatment Precautions</h1>
         <ul className="custom-list">

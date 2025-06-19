@@ -25,7 +25,7 @@ const EyelashLift = () => {
         great choice for you. … Despite not actually adding any length, the curl
         makes my lashes look longer, and it really opens up my small eyes.
       </p>
-      <img src={EyelashLiftimg2} className="centered-image w-2/6" />
+      <img src={EyelashLiftimg2} className="centered-image w-2/6" alt="Eyelash Lift" />
       <h3 className="custom-h3">Is an eyelash lift better than extensions?</h3>
       <p className="custom-p">
         –Extensions last 3-4 weeks, while a lift can last 6-8 weeks. -A lift

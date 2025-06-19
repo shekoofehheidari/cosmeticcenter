@@ -184,7 +184,7 @@ const AllServices = () => {
       <div className="grid grid-cols-3 hero-section services-grid">
         {allservices.map(({ id, title, description, image }) => (
           <div key={id} className="service-card">
-            <img src={image} alt={title} />
+            <img src={image} alt="services"/>
             <h3>{title}</h3>
             <p>{description}</p>
           </div>

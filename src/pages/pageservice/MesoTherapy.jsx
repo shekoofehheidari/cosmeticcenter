@@ -112,7 +112,7 @@ const MesoTherapy = () => {
         in your skin texture, appearance, and overall quality. This is your
         opportunity to reinvigorate your skin and bring it back to life.
       </p>
-      <img src={MesoTherapyimg2} className="centered-image w-full" />
+      <img src={MesoTherapyimg2} className="centered-image w-full" alt="Meso Therapy" />
     </div>
   );
 };

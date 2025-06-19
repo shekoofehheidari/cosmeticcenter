@@ -122,7 +122,7 @@ const Acupuncture = () => {
         Serious complications are extremely rare when acupuncture is done by a
         trained professional using sterile, disposable needles.
       </p>
-      <img src={Acupunctureimg2} className="centered-image w-2/4" />
+      <img src={Acupunctureimg2} className="centered-image w-2/4" alt="Acupuncture" />
       <h2 className="custom-h2">
         Ready to Experience the Benefits of Acupuncture?
       </h2>

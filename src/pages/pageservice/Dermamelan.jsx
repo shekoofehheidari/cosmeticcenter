@@ -20,7 +20,7 @@ const Dermamelan = () => {
         Derm–Eclat™/Dermamelan formulation work by blocking this enzyme, or even
         by inverting the metabolic process of the transformation chain.
       </p>
-      <img src={Dermamelan1img1} className="centered-image w-2/6" />
+      <img src={Dermamelan1img1} className="centered-image w-2/6" alt="Dermamelan"/>
       <p className="custopm-p">
         A chemical peel is applied to the face prior to the application of the
         Derm–Eclat™/Dermamelan mask. Derm–Eclat™/Dermamelan is a thick
@@ -32,7 +32,7 @@ const Dermamelan = () => {
         hyperpigmentation / melasma. An at–home maintenance cream is given to
         clients and is to be used on a daily basis post–treatment.
       </p>
-      <img src={Dermamelan1img2} className="centered-image w-2/6" />
+      <img src={Dermamelan1img2} className="centered-image w-2/6" alt="Dermamelan" />
       <p className="custopm-p">
         To find out if Derm–Eclat™/Dermamelan is right for you, please contact
         us for your consultation.We will be able to provide you with all of the

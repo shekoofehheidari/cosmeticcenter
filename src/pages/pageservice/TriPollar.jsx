@@ -12,7 +12,7 @@ const TriPollar = () => {
         Treat mild to moderate facial wrinkles and rhytides Provide body shaping
         and skin tightening Reduce the appearance of cellulite
       </p>
-      <img src={TriPollarimg2} className="centered-image w-2/6" />
+      <img src={TriPollarimg2} className="centered-image w-2/6" alt="TriPollar"/>
       <p className="custom-p">
         How TriPollar Works TriPollar technology, utilizing painless, focused
         and optimal radio-frequency (RF) energy to the dermis and to

@@ -35,7 +35,7 @@ const OxyGeneo = () => {
   return (
     <div className="custom-container">
       <h1 className="custom-h1">OxyGeneo</h1>
-      <img src={oxygenoimg2} className="w-1/6" />
+      <img src={oxygenoimg2} className="w-1/6" alt="oxygeno" />
       <h3 className="custom-h3">
         Every day, tens of thousands of OxyGeneo™ treatments are performed all
         across Canada. Patented OxyGeneo™ technology harnesses the power of
@@ -145,7 +145,7 @@ const OxyGeneo = () => {
         treating the skin at a deeper level. Exfoliate, Oxygenate, and Nourish
         your way to youthful skin.
       </h3>
-      <img src={oxygenoimg5} className="centered-image w-64" />
+      <img src={oxygenoimg5} className="centered-image w-64" alt="oxygeno" />
       <h2 className="custom-h2">EXFOLIATE</h2>
       <p>
         The OxyGeneo™ exfoliates the upper skin layer to remove dead cells, open
@@ -153,7 +153,7 @@ const OxyGeneo = () => {
         generates an abundance of CO2 bubbles that permeate the upper skin layer
         to trigger a physiological response known as the Bohr Effect.
       </p>
-      <img src={oxygenoimg6} className="centered-image w-64" />
+      <img src={oxygenoimg6} className="centered-image w-64" alt="oxygeno" />
       <h2 className="custom-h2">OXYGENATE</h2>
       <p>
         OxyGeneo™ harnesses the natural processes of the body to oxygenate the
@@ -161,7 +161,7 @@ const OxyGeneo = () => {
         sends O2-rich blood to the skin to replace the CO2. This results in
         optimal skin oxygenation and increased cellular activity.
       </p>
-      <img src={oxygenoimg7} className="centered-image w-64" />
+      <img src={oxygenoimg7} className="centered-image w-64" alt="oxygeno" />
       <h2 className="custom-h2">NOURISH</h2>
       <p>
         At the same time, OxyGeneo™ nourishes the skin with nutrients, vitamins
@@ -182,7 +182,7 @@ const OxyGeneo = () => {
       <h2 className="custom-h2">
         The ultrasound hand piece achieves superior infusion by:
       </h2>
-      <img src={oxygenoimg8} className="centered-image w-1/4" />
+      <img src={oxygenoimg8} className="centered-image w-1/4" alt="oxygeno" />
       <ul className="custom-list">
         <li>Increasing the permeability of the skin</li>
         <li>Breaking down the long nutrient molecules into shorter ones</li>
@@ -192,7 +192,7 @@ const OxyGeneo = () => {
         </li>
       </ul>
 
-      <img src={oxygenoimg9} className="centered-image w-1/4" />
+      <img src={oxygenoimg9} className="centered-image w-1/4" alt="oxygeno" />
       <p>
         The OxyGeneo is now available with TriPollar® technology, the 3rd and
         latest generation and MOST advanced radio frequency (RF) technology in

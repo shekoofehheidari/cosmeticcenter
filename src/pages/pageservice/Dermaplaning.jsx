@@ -21,7 +21,7 @@ const Dermaplaning = () => {
         Dermaplaning not only gets rid of peach fuzz on the face, it also
         exfoliates removing dead skin cells on the outermost layer.
       </p>
-      <img src={Dermaplaningimg1} className="centered-image w-2/5" />
+      <img src={Dermaplaningimg1} className="centered-image w-2/5" alt="Dermaplaning" />
       <p className="custom-p">
         It’s a great option for those who want a deep exfoliation, but are not
         allowed to use peeling agents on their skin because of adverse
