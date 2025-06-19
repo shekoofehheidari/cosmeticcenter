@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import srvhairremoval from "../../assets/images/serviceimage/srvhairremoval.jpg";
 import srvmneedling from "../../assets/images/serviceimage/srvmicroneedling.jpg";
 import srvacupuncture from "../../assets/images/serviceimage/srvacupuncture.jpg";
@@ -12,6 +13,7 @@ const mccservices = [
     id: 1,
     img: srvhairremoval,
     srvname: "Laser Hair Removal",
+    path: "/services/laser-hair-removal",
     description:
       "Effective for all skin types and genders—get smooth, hair-free skin that lasts.",
   },
@@ -19,6 +21,7 @@ const mccservices = [
     id: 2,
     img: srvmneedling,
     srvname: "Microneedling",
+    path: "/services/MicroNeedling",
     description:
       "Boosts collagen, reduces scars, and smooths fine lines—great for skin renewal.",
   },
@@ -26,6 +29,7 @@ const mccservices = [
     id: 3,
     img: srvacupuncture,
     srvname: "Acupuncture",
+    path: "/services/acupuncture",
     description:
       "Balances your body, eases pain, and supports wellness naturally.",
   },
@@ -33,6 +37,7 @@ const mccservices = [
     id: 4,
     img: srvcupping,
     srvname: "Cupping",
+    path: "/services/cupping",
     description:
       "Boosts circulation, relieves pain, and reduces tension—natural healing therapy.",
   },
@@ -40,6 +45,7 @@ const mccservices = [
     id: 5,
     img: srvoxygeno,
     srvname: "Oxygeneo",
+    path: "/services/oxygeno",
     description:
       "3-in-1 super facial—exfoliates, oxygenates, and deeply nourishes for glowing skin.",
   },
@@ -47,6 +53,7 @@ const mccservices = [
     id: 6,
     img: srvtagremoval,
     srvname: "Skin Tag Removal",
+    path: "/services/skin-tag-removal",
     description:
       "Quick, safe, and non-invasive removal for clear, smooth skin.",
   },
@@ -54,7 +61,7 @@ const mccservices = [
 
 const Services = () => {
   return (
-    <div className=" bg-white">
+    <div className="bg-white">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {mccservices.map((service) => (
@@ -70,12 +77,12 @@ const Services = () => {
                 />
               </div>
               <div className="w-2/3 p-4 relative text-left">
-                <h3 className="text-lg font-semibold mb-2">
-                  {service.srvname}
-                </h3>
+                <h3 className="text-lg font-semibold mb-2">{service.srvname}</h3>
                 <p className="text-sm text-gray-600">{service.description}</p>
                 <div className="absolute top-4 right-4">
-                  <CircleButton />
+                  <Link to={service.path}>
+                    <CircleButton />
+                  </Link>
                 </div>
               </div>
             </div>

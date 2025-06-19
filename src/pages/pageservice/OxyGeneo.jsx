@@ -35,7 +35,7 @@ const OxyGeneo = () => {
   return (
     <div className="custom-container">
       <h1 className="custom-h1">OxyGeneo</h1>
-      <img src={oxygenoimg2} className="w-1/6" alt="oxygeno" />
+      <img src={oxygenoimg2} className="w-full" alt="oxygeno" />
       <h3 className="custom-h3">
         Every day, tens of thousands of OxyGeneo™ treatments are performed all
         across Canada. Patented OxyGeneo™ technology harnesses the power of
