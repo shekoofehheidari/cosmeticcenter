@@ -1,12 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import imgaftercare from "../../assets/images/aftercare.jpg";
 import { Button } from "../buttons/Button"; 
 
 const AfterCare = () => {
+  const navigate = useNavigate();
+
   const handleClick = () => {
-
-    alert("After Care page is coming soon!");
-
+    navigate("/after-care-pdfs"); 
   };
 
   return (
@@ -22,7 +23,7 @@ const AfterCare = () => {
           </p>
 
           {/* Button */}
-          <Button onClick={handleClick} disabled>
+          <Button onClick={handleClick}>
             Learn More About After Care ...
           </Button>
         </div>
