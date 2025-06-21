@@ -14,15 +14,15 @@ import DermeclatRej from "../assets/pdf/The-Derm-eclatTM-Skin-Rejuvenation-.pdf"
 
 // List without price list
 const aftercareItems = [
-  { text: "After Laser Hair Removal", file: CareHairRemoval },
-  { text: "After Microneedling", file: careMicroneedling },
-  { text: "After Microdermabrasion", file: careMicDermbrasion },
-  { text: "After Permanent Makeup", file: carePMakeup },
-  { text: "After Botox & Filler", file: CareBotoxfiller },
-  { text: "After Eyelash lift", file: CareEyelashLift },
-  { text: "After Chemical Peels", file: CareChemicPeels },
-  { text: "Derm-Eclat before & After Care", file: CareDermEclat },
-  { text: "The Derm-eclat TM Skin Rejuvenation", file: DermeclatRej },
+  { text: "✔ After Laser Hair Removal", file: CareHairRemoval },
+  { text: "✔ After Microneedling", file: careMicroneedling },
+  { text: "✔ After Microdermabrasion", file: careMicDermbrasion },
+  { text: "✔ After Permanent Makeup", file: carePMakeup },
+  { text: "✔ After Botox & Filler", file: CareBotoxfiller },
+  { text: "✔ After Eyelash lift", file: CareEyelashLift },
+  { text: "✔ After Chemical Peels", file: CareChemicPeels },
+  { text: "✔ Derm-Eclat before & After Care", file: CareDermEclat },
+  { text: "✔ The Derm-eclat TM Skin Rejuvenation", file: DermeclatRej },
 ];
 
 const Aftercare = () => {

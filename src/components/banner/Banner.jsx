@@ -48,7 +48,7 @@ const Banner = () => {
         </motion.h1>
 
         <motion.h1
-          className="text-4xl sm:text-6xl md:text-7xl font-bold text-rose-400 pt-6"
+          className="text-4xl sm:text-6xl md:text-7xl font-bold text-rose-400"
           variants={textVariants}
         >
           M a r i a
