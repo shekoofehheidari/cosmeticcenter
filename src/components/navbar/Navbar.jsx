@@ -19,7 +19,7 @@ const Navbar = () => {
     { name: "Online Payment", path: "/online-payment" },
     { name: "Online Shop", path: "/#shop" },
     { name: "Gift Card", path: "/gift-card" },
-    { name: "Book An Appointment", path: "/#appointment" },
+    { name: "Book An Appointment", path: "/book-appoinment" },
     { name: "MCC Policy", path: "/policy" },
     { name: "Contact Us", path: "/contact" },
   ];

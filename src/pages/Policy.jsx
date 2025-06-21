@@ -2,13 +2,13 @@ import React from "react";
 import "../pages/pageservice/servicestyle.css";
 import { motion } from "framer-motion";
 import { Button } from "../components/buttons/Button";
-import { useNavigate } from "react-router-dom";
 
 const Policy = () => {
-  const navigate = useNavigate();
-
   const handleClick = () => {
-    navigate("/book-appointment");
+    window.open(
+      "https://book.squareup.com/appointments/nsny3vnzgo2qf4/location/ZVDZB55KV1N67/services",
+      "_blank"
+    );
   };
 
   return (
@@ -60,7 +60,7 @@ const Policy = () => {
         to ensure that we can enable our services to be delivered in a timely
         manner and consequently respect your time. We will kindly ask for a
         $50.00 refundable deposit in order to confirm your appointment, upon
-        each appointment scheduling. If you need to cancel your appointment,
+        each appointment scheduling. <br /> If you need to cancel your appointment,
         please call us at <span className="font-bold"> (647) 887-7605</span>{" "}
         between the business hours (Mon – Sun 09:00-21:00) or leave us a text
         message at the same number. You can also kindly email us at{" "}
@@ -68,7 +68,7 @@ const Policy = () => {
         If necessary, you may leave a detailed voicemail.
       </p>
 
-      {/* appoinment button */}
+      {/* appointment button */}
       <motion.div className="flex mt-6 justify-center py-6">
         <Button onClick={handleClick}>Book An Appointment</Button>
       </motion.div>

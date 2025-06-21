@@ -20,6 +20,7 @@ import Contact from "./pages/Contact";
 import Policy from "./pages/Policy";
 import GiftCard from "./pages/GiftCard";
 import OnlinePayment from "./pages/OnlinePayment";
+import Bookappoinment from "./pages/BookAppoinment"
 import AftercarePDFs from "./pages/AftercarePFDs";
 
 // Services pages
@@ -59,9 +60,9 @@ const Home = () => (
     <Banner />
     <Welcome />
     <Services />
-    <AfterCare />
     <Googlereview />
     <Promotion />
+    <AfterCare />
   </>
 );
 
@@ -78,7 +79,8 @@ function App() {
           <Route path="/policy" element={<Policy />} />
           <Route path="/gift-card" element={<GiftCard />} />
           <Route path="/online-payment" element={<OnlinePayment />} />
-          <Route path="/After-care-pdfs" element={<AftercarePDFs />} />
+          <Route path="/after-care-pdfs" element={<AftercarePDFs />} />
+          <Route path="/book-appoinment" element={<Bookappoinment />} />
 
           {/* Services */}
           <Route path="/services/all-services" element={<AllServices />} />
