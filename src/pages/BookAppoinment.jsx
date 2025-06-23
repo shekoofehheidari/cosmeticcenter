@@ -23,8 +23,8 @@ const BookAppoinment = () => {
     <div className="custom-container">
       <h1 className="custom-h1">Book An Appointment (MCC)</h1>
       <p className="custom-p">
-        Thank you for choosing us. At{" "}
-        <span className="font-bold">Maria Cosmetic Center</span>, we value your
+        Thank you for choosing us. At
+        <span className="font-bold"> Maria Cosmetic Center</span>, we value your
         business and time, and appreciate your cooperation with our booking and
         cancellation policy. Please read our policy before booking your
         appointment, and make sure you receive confirmation after booking.
@@ -32,10 +32,10 @@ const BookAppoinment = () => {
       <img
         src={policyimg}
         alt="Booking and Cancellation Policy"
-        className="centered-image cursor-pointer"
+        className="centered-image cursor-pointer w-2/6"
         onClick={handleImageClick}
       />
-      <motion.div className="flex mt-6 justify-center py-6">
+      <motion.div className="flex justify-center py-2">
         <Button onClick={handleClick}>Book An Appointment</Button>
       </motion.div>
     </div>

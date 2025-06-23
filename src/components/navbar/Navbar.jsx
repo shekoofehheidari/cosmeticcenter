@@ -19,7 +19,7 @@ const Navbar = () => {
     { name: "Online Payment", path: "/online-payment" },
     { name: "Online Shop", path: "/#shop" },
     { name: "Gift Card", path: "/gift-card" },
-    { name: "Book An Appointment", path: "/book-appoinment" },
+    { name: "Book Now", path: "/book-appoinment" },
     { name: "MCC Policy", path: "/policy" },
     { name: "Contact Us", path: "/contact" },
   ];
@@ -90,7 +90,7 @@ const Navbar = () => {
         <div className="desktop-menu">
           <div className="dropdown" ref={dropdownRef}>
             <button className="dropdown-button" onClick={toggleDropdown}>
-              Our Services
+              Services
             </button>
 
             <div className={`dropdown-menu ${dropdownOpen ? "show" : ""}`}>
