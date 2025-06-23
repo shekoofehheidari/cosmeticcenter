@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import servicesRoutes from "./routes/servicesRoutes";
 
-
 // Layout components
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
@@ -54,8 +53,6 @@ function App() {
             {servicesRoutes.map(({ path, element }) => (
               <Route key={path} path={path} element={element} />
             ))}
-
-            <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
         <Routes>
@@ -71,6 +68,9 @@ function App() {
           {servicesRoutes.map(({ path, element }) => (
             <Route key={path} path={path} element={element} />
           ))}
+
+          <Route path="*" element={<NotFound />} />
+        </Routes>
 
         <Footer />
       </div>
