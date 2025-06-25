@@ -9,7 +9,7 @@ import checkoutqrcode from "../assets/images/checkout-link-qr-code.png";
 
 const OnlinePayment = () => {
   return (
-    <div className="px-4 py-8 max-w-3xl mx-auto text-left">
+    <div className="custom-container">
       <h1 className="text-2xl font-bold mb-4 text-rose-400 pt-16">
         Online Payment
       </h1>

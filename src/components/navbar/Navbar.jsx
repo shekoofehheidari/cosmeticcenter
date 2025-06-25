@@ -19,7 +19,7 @@ const Navbar = () => {
     { name: "Online Payment", path: "/online-payment" },
     { name: "Online Shop", path: "/#shop" },
     { name: "Gift Card", path: "/gift-card" },
-    { name: "Book Now", path: "/book-appoinment" },
+    { name: "Book Now", path: "/book-appointment" },
     { name: "MCC Policy", path: "/policy" },
     { name: "Contact Us", path: "/contact" },
   ];
@@ -31,10 +31,7 @@ const Navbar = () => {
     { name: "Facial Service", path: "/services/facial-service" },
     { name: "Skin Tag Removal", path: "/services/skin-tag-removal" },
     { name: "Gua Sha Massage", path: "/services/gua-sha-massage" },
-    {
-      name: "Lymphatic Drainage Massage",
-      path: "/services/lymphatic-drainage-massage",
-    },
+    { name: "Lymphatic Drainage Massage", path: "/services/lymphatic-drainage-massage" },
     { name: "Buccal Massage", path: "/services/buccal-massage" },
     { name: "Aromatherapy Massage", path: "/services/aromatherapy-massage" },
     { name: "Cosmetic Acupuncture", path: "/services/cosmetic-acupuncture" },
@@ -53,7 +50,6 @@ const Navbar = () => {
     { name: "PRP", path: "/services/Prp" },
     { name: "Meso Therapy", path: "/services/MesoTherapy" },
     { name: "Eyelash Lift", path: "/services/EyelashLift" },
-
     { name: "OxyPods", path: "/services/OxyPods" },
   ];
 
@@ -81,24 +77,24 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        {/* Logo */}
         <Link to="/" className="logo">
           <img src={logo} alt="MCC Logo" />
         </Link>
 
-        {/* Desktop Menu */}
         <div className="desktop-menu">
           <div className="dropdown" ref={dropdownRef}>
             <button className="dropdown-button" onClick={toggleDropdown}>
               Services
             </button>
-
-            <div className={`dropdown-menu ${dropdownOpen ? "show" : ""}`}>
+            <div className={`dropdown-menu multi-column ${dropdownOpen ? "show" : ""}`}>
               {services.map(({ name, path }) => (
                 <Link
                   key={name}
                   to={path}
-                  onClick={() => setDropdownOpen(false)}
+                  onClick={() => {
+                    setDropdownOpen(false);
+                    setIsOpen(false);
+                  }}
                   className={`dropdown-item ${getActiveClass(path)}`}
                 >
                   {name}
@@ -118,16 +114,13 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Cart Icon */}
         <FaShoppingCart className="cart-icon" />
 
-        {/* Mobile Toggle */}
         <button className="mobile-toggle" onClick={toggleMenu}>
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {isOpen && (
         <div className="mobile-menu">
           <div className="mobile-section">Our Services</div>

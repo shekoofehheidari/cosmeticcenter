@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import servicesRoutes from "./routes/servicesRoutes";
@@ -21,7 +21,7 @@ import Contact from "./pages/Contact";
 import Policy from "./pages/Policy";
 import GiftCard from "./pages/GiftCard";
 import OnlinePayment from "./pages/OnlinePayment";
-import Bookappoinment from "./pages/BookAppoinment";
+import BookAppointment from "./pages/BookAppoinment";
 import AftercarePDFs from "./pages/AftercarePFDs";
 
 // 404 page
@@ -45,16 +45,7 @@ function App() {
       <ScrollToTop />
       <div className="App">
         <Navbar />
-        <Suspense fallback={<div className="loading">در حال بارگذاری...</div>}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            {/* سایر مسیرها */}
 
-            {servicesRoutes.map(({ path, element }) => (
-              <Route key={path} path={path} element={element} />
-            ))}
-          </Routes>
-        </Suspense>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
@@ -62,7 +53,7 @@ function App() {
           <Route path="/gift-card" element={<GiftCard />} />
           <Route path="/online-payment" element={<OnlinePayment />} />
           <Route path="/after-care-pdfs" element={<AftercarePDFs />} />
-          <Route path="/book-appoinment" element={<Bookappoinment />} />
+          <Route path="/book-appointment" element={<BookAppointment />} />
 
           {/* Dynamic services routes */}
           {servicesRoutes.map(({ path, element }) => (
