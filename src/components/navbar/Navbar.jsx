@@ -39,29 +39,28 @@ const Navbar = () => {
     { name: "Cupping", path: "/services/cupping" },
     { name: "Dermaplaning", path: "/services/dermaplaning" },
     { name: "OxyGeno", path: "/services/oxygeno" },
-    { name: "Microdermabrasion", path: "/services/Microdermabrasion" },
-    { name: "Micro Needling", path: "/services/MicroNeedling" },
-    { name: "Calcium Peels", path: "/services/CalciumPeels" },
-    { name: "Dermamelan", path: "/services/Dermamelan" },
-    { name: "Fruit Peeling", path: "/services/Fruitpeeling" },
-    { name: "Chemical Peels", path: "/services/ChemicalPeels" },
-    { name: "TriPollar", path: "/services/TriPollar" },
-    { name: "Dermal Filler", path: "/services/DermalFiller" },
-    { name: "PRP", path: "/services/Prp" },
-    { name: "Meso Therapy", path: "/services/MesoTherapy" },
-    { name: "Eyelash Lift", path: "/services/EyelashLift" },
-    { name: "OxyPods", path: "/services/OxyPods" },
+    { name: "Microdermabrasion", path: "/services/microdermabrasion" },
+    { name: "Micro Needling", path: "/services/microneedling" },
+    { name: "Calcium Peels", path: "/services/calciumpeels" },
+    { name: "Dermamelan", path: "/services/dermamelan" },
+    { name: "Fruit Peeling", path: "/services/fruitpeeling" },
+    { name: "Chemical Peels", path: "/services/chemicalpeels" },
+    { name: "TriPollar", path: "/services/tripollar" },
+    { name: "Dermal Filler", path: "/services/dermalfiller" },
+    { name: "PRP", path: "/services/prp" },
+    { name: "Meso Therapy", path: "/services/mesotherapy" },
+    { name: "Eyelash Lift", path: "/services/eyelashlift" },
+    { name: "OxyPods", path: "/services/oxypods" },
   ];
 
   const getActiveClass = (path) => {
     const [base, hash] = path.split("#");
-    const currentPath = location.pathname;
-    const currentHash = location.hash;
-    const matchPath = currentPath === base;
-    const matchHash = hash ? currentHash === `#${hash}` : true;
+    const matchPath = location.pathname === base;
+    const matchHash = hash ? location.hash === `#${hash}` : true;
     return matchPath && matchHash ? "active-link" : "";
   };
 
+  // Close dropdown if clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -73,6 +72,12 @@ const Navbar = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
+  // Close dropdown when route changes
+  useEffect(() => {
+    setDropdownOpen(false);
+    setIsOpen(false);
+  }, [location]);
 
   return (
     <nav className="navbar">

@@ -1,12 +1,14 @@
+/* ===== Navbar Wrapper ===== */
 .navbar {
   width: 100%;
-  background-color: white;
+  background-color: #fff;
   border-bottom: 1px solid #eee;
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
+/* ===== Navbar Container ===== */
 .navbar-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -16,32 +18,39 @@
   justify-content: space-between;
 }
 
+/* ===== Logo ===== */
 .logo img {
   height: 50px;
 }
 
+/* ===== Desktop Menu ===== */
 .desktop-menu {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
+/* Menu items and dropdown button shared styles */
 .menu-item,
 .dropdown-button {
   background: none;
   border: none;
-  cursor: pointer;
   font-size: 1rem;
   color: #333;
+  cursor: pointer;
   text-decoration: none;
   padding: 0.5rem;
+  transition: color 0.2s ease;
 }
 
 .menu-item:hover,
-.dropdown-button:hover {
+.dropdown-button:hover,
+.menu-item:focus-visible,
+.dropdown-button:focus-visible {
   color: #007bff;
 }
 
+/* ===== Dropdown Styles ===== */
 .dropdown {
   position: relative;
 }
@@ -51,16 +60,16 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background: white;
+  margin-top: 0.5rem;
+  background: #fff;
   border: 1px solid #ddd;
   border-radius: 5px;
   z-index: 999;
-  margin-top: 0.5rem;
 }
 
-/* 3-column layout for services */
-.multi-column {
-  display: grid;
+/* Multi-column layout for service links */
+.dropdown-menu.multi-column {
+  display: none;
   grid-template-columns: repeat(3, 1fr);
   width: 600px;
   max-height: 400px;
@@ -70,31 +79,34 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.dropdown-item {
-  color: #333;
-  text-decoration: none;
-  font-size: 0.9rem;
-  padding: 0.3rem 0.5rem;
-  border-radius: 4px;
-}
-
-.dropdown-item:hover {
-  background-color: #f0f0f0;
-}
-
+/* Show dropdown when triggered */
 .dropdown-menu.show {
   display: grid;
 }
 
-/* Cart icon */
+.dropdown-item {
+  font-size: 0.9rem;
+  padding: 0.3rem 0.5rem;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus-visible {
+  background-color: #f0f0f0;
+}
+
+/* ===== Cart Icon ===== */
 .cart-icon {
   font-size: 20px;
-  cursor: pointer;
   color: #444;
+  cursor: pointer;
   margin-left: 1rem;
 }
 
-/* Mobile styles */
+/* ===== Mobile Menu Toggle Button ===== */
 .mobile-toggle {
   display: none;
   background: none;
@@ -102,11 +114,13 @@
   cursor: pointer;
 }
 
+/* ===== Mobile Menu ===== */
 .mobile-menu {
   display: none;
   flex-direction: column;
-  background-color: white;
+  background-color: #fff;
   padding: 1rem;
+  border-top: 1px solid #eee;
 }
 
 .mobile-section {
@@ -115,16 +129,18 @@
 }
 
 .mobile-item {
-  color: #333;
-  text-decoration: none;
   padding: 0.5rem 0;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.2s ease;
 }
 
-.mobile-item:hover {
+.mobile-item:hover,
+.mobile-item:focus-visible {
   background-color: #f8f8f8;
 }
 
-/* Responsive */
+/* ===== Responsive ===== */
 @media screen and (max-width: 768px) {
   .desktop-menu {
     display: none;
