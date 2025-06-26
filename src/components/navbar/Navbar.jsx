@@ -31,7 +31,10 @@ const Navbar = () => {
     { name: "Facial Service", path: "/services/facial-service" },
     { name: "Skin Tag Removal", path: "/services/skin-tag-removal" },
     { name: "Gua Sha Massage", path: "/services/gua-sha-massage" },
-    { name: "Lymphatic Drainage Massage", path: "/services/lymphatic-drainage-massage" },
+    {
+      name: "Lymphatic Drainage Massage",
+      path: "/services/lymphatic-drainage-massage",
+    },
     { name: "Buccal Massage", path: "/services/buccal-massage" },
     { name: "Aromatherapy Massage", path: "/services/aromatherapy-massage" },
     { name: "Cosmetic Acupuncture", path: "/services/cosmetic-acupuncture" },
@@ -60,7 +63,6 @@ const Navbar = () => {
     return matchPath && matchHash ? "active-link" : "";
   };
 
-  // Close dropdown if clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -91,7 +93,11 @@ const Navbar = () => {
             <button className="dropdown-button" onClick={toggleDropdown}>
               Services
             </button>
-            <div className={`dropdown-menu multi-column ${dropdownOpen ? "show" : ""}`}>
+            <div
+              className={`dropdown-menu multi-column ${
+                dropdownOpen ? "show" : ""
+              }`}
+            >
               {services.map(({ name, path }) => (
                 <Link
                   key={name}

@@ -140,7 +140,6 @@
   background-color: #f8f8f8;
 }
 
-/* ===== Responsive ===== */
 @media screen and (max-width: 768px) {
   .desktop-menu {
     display: none;
