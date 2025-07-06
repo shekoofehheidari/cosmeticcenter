@@ -12,7 +12,6 @@ const Navbar = () => {
   const dropdownRef = useRef();
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
-  const toggleDropdown = () => setDropdownOpen((prev) => !prev);
 
   const menuItems = [
     { name: "Home", path: "/" },
@@ -75,7 +74,6 @@ const Navbar = () => {
     };
   }, []);
 
-  // Close dropdown when route changes
   useEffect(() => {
     setDropdownOpen(false);
     setIsOpen(false);
@@ -89,12 +87,22 @@ const Navbar = () => {
         </Link>
 
         <div className="desktop-menu">
-          <div className="dropdown" ref={dropdownRef}>
-            <button className="dropdown-button" onClick={toggleDropdown}>
+          <div
+            className="dropdown"
+            ref={dropdownRef}
+            onMouseEnter={() => setDropdownOpen(true)}
+            onMouseLeave={() => setDropdownOpen(false)}
+          >
+            <button
+              className="dropdown-button"
+              aria-haspopup="true"
+              aria-expanded={dropdownOpen}
+            >
               Services
             </button>
+
             <div
-              className={`dropdown-menu multi-column ${
+              className={`dropdown-menu multi-column full-width-dropdown ${
                 dropdownOpen ? "show" : ""
               }`}
             >

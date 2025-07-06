@@ -26,7 +26,7 @@
 /* ===== Desktop Menu ===== */
 .desktop-menu {
   display: flex;
-  align-items: center;
+  align-items: left;
   gap: 1rem;
 }
 
@@ -55,35 +55,33 @@
   position: relative;
 }
 
+/* Base hidden state */
 .dropdown-menu {
   display: none;
   position: absolute;
   top: 100%;
-  left: 0;
-  margin-top: 0.5rem;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
   z-index: 999;
 }
 
-/* Multi-column layout for service links */
-.dropdown-menu.multi-column {
-  display: none;
-  grid-template-columns: repeat(3, 1fr);
-  width: 600px;
-  max-height: 400px;
-  overflow-y: auto;
+/* Full-width dropdown overrides */
+.dropdown-menu.full-width-dropdown {
+  left: 0;
+  width: 100vw;
+  background-color: #fff;
+  padding: 2rem 4rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border-top: 1px solid #ddd;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1rem;
-  padding: 1rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  align-items: start;
 }
 
-/* Show dropdown when triggered */
+/* Show dropdown on .show class */
 .dropdown-menu.show {
   display: grid;
 }
 
+/* Dropdown items */
 .dropdown-item {
   font-size: 0.9rem;
   padding: 0.3rem 0.5rem;
@@ -140,6 +138,7 @@
   background-color: #f8f8f8;
 }
 
+/* ===== Responsive (Mobile) ===== */
 @media screen and (max-width: 768px) {
   .desktop-menu {
     display: none;
@@ -153,8 +152,9 @@
     display: flex;
   }
 
-  .dropdown-menu.multi-column {
+  /* Dropdown becomes single column on small screens */
+  .dropdown-menu.full-width-dropdown {
     grid-template-columns: 1fr;
-    width: 100%;
+    padding: 1rem;
   }
 }

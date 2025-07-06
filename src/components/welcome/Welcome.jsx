@@ -17,6 +17,7 @@ const Welcome = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1 }}
         >
+          
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-cinzel text-transparent bg-clip-text bg-gray-500 drop-shadow-sm mb-2">
             Are You Ready for a New & Better You?
           </h1>

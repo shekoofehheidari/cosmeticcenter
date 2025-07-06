@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Button } from "../buttons/Button"; // ✅ Adjust if your actual path is different
+import { Button } from "../buttons/Button";
 import pricelistpfd from "../../assets/pdf/PRICE-LIST-FEB-202555.pdf";
 import "./banner.css";
 

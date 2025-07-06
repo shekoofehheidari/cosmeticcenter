@@ -2,14 +2,15 @@ import React from "react";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 import { Button } from "../components/buttons/Button";
+import "../pages/pageservice/servicestyle.css";
 
 const Contact = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col items-start">
       {/* ───── Page Header ───── */}
-      <header className="bg-white shadow-sm w-full">
+      <header className="bg-white  w-full">
         <div className="max-w-6xl mx-auto px-4 py-6 text-left">
-          <h1 className="text-3xl font-semibold text-gray-900">Contact</h1>
+          <h1 className="custom-h1">Contact Us</h1>
         </div>
       </header>
 
@@ -167,3 +168,5 @@ const Contact = () => {
 };
 
 export default Contact;
+
+

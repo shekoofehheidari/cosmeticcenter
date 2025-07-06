@@ -26,6 +26,7 @@ import AftercarePDFs from "./pages/AftercarePFDs";
 
 // 404 page
 import NotFound from "./pages/NotFound";
+import CustomerReviews from "./components/CustomerReviews/CustomerReviews";
 
 // Home Page Component
 const Home = () => (
@@ -36,6 +37,7 @@ const Home = () => (
     <Googlereview />
     <Promotion />
     <AfterCare />
+    <CustomerReviews />
   </>
 );
 

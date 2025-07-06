@@ -10,3 +10,19 @@
     padding-top: 4rem; 
 }
 
+.bannerimage {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem 4rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .bannerimage {
+    padding: 0 4rem 4rem 4rem;
+  }
+}
+
+
