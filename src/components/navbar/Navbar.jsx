@@ -12,7 +12,7 @@ const Navbar = () => {
   const dropdownRef = useRef();
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
-
+  //menue items
   const menuItems = [
     { name: "Home", path: "/" },
     { name: "Online Payment", path: "/online-payment" },
@@ -120,7 +120,7 @@ const Navbar = () => {
                 </Link>
               ))}
             </div>
-          </div> 
+          </div>
 
           {menuItems.map(({ name, path }) => (
             <Link

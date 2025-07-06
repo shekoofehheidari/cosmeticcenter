@@ -1,3 +1,4 @@
+//customer review
 const reviews = [
   {
     name: "iuliia ChebotarevaN",
