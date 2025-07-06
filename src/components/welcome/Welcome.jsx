@@ -24,7 +24,7 @@ const Welcome = () => {
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-cinzel text-transparent bg-clip-text bg-gray-600 drop-shadow-sm mb-2">
             Services
           </h1>
-          <p className="text-gray-800">
+          <p className="text-gray-700">
             See all our services through the menu ...
           </p>
         </motion.div>

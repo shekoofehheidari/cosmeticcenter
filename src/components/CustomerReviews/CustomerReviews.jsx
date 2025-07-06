@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { FaQuoteLeft, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import reviews from "./reviewsData";
 
@@ -11,21 +11,22 @@ const CustomerReviews = () => {
   const reviewsPerPage = 2;
   const totalPages = Math.ceil(reviews.length / reviewsPerPage);
 
-  const nextSlide = () => {
+  // استفاده از useCallback برای حفظ identity تابع
+  const nextSlide = useCallback(() => {
     setCurrentIndex((prev) => (prev + 1) % totalPages);
-  };
+  }, [totalPages]);
 
-  const prevSlide = () => {
+  const prevSlide = useCallback(() => {
     setCurrentIndex((prev) =>
       prev === 0 ? totalPages - 1 : (prev - 1) % totalPages
     );
-  };
+  }, [totalPages]);
 
   /* Auto-slide */
   useEffect(() => {
     const interval = setInterval(nextSlide, 20000);
     return () => clearInterval(interval);
-  }, []);
+  }, [nextSlide]); // ✅ اضافه شد
 
   const handleToggleExpand = (index) => {
     setExpanded((prev) => ({
