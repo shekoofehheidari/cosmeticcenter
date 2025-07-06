@@ -21,7 +21,7 @@ const CustomerReviews = () => {
     );
   };
 
-  // Auto-slide every 5 seconds
+  // Auto-slide
   useEffect(() => {
     const interval = setInterval(nextSlide, 20000);
     return () => clearInterval(interval);

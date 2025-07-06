@@ -120,7 +120,7 @@ const Navbar = () => {
                 </Link>
               ))}
             </div>
-          </div>
+          </div> 
 
           {menuItems.map(({ name, path }) => (
             <Link

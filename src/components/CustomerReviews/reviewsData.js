@@ -1,5 +1,3 @@
-// src/data/reviewsData.js
-
 const reviews = [
   {
     name: "iuliia ChebotarevaN",
