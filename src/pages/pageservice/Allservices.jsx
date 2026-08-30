@@ -24,10 +24,10 @@ import dermemelan from "../../assets/images/serviceimage/dermemelan.jpg";
 import fruitpeel1 from "../../assets/images/serviceimage/fruitpeel1.jpg";
 import chemicalpeels1 from "../../assets/images/serviceimage/chemicalpeels1.jpg";
 import tripollar1 from "../../assets/images/serviceimage/tripollar1.jpg";
-import dermalfiller1 from "../../assets/images/serviceimage/dermalfiller1.jpg";
+/* import dermalfiller1 from "../../assets/images/serviceimage/dermalfiller1.jpg";
 import prp1 from "../../assets/images/serviceimage/prp1.jpg";
 import mesoteraphy1 from "../../assets/images/serviceimage/mesoteraphy1.jpg";
-import eyelashlift1 from "../../assets/images/serviceimage/eyelashlift1.jpg";
+import eyelashlift1 from "../../assets/images/serviceimage/eyelashlift1.jpg"; */
 
 const allservices = [
   {
