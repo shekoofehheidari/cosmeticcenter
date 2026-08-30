@@ -33,7 +33,7 @@ const Aftercare = () => {
   return (
     <div className="custom-container">
       <div className="custom-container px-4 py-8">
-        <h1 className="custom-h1">After are </h1>
+        <h1 className="custom-h1">After Care </h1>
         {/* Image */}
         <div className="flex justify-center mb-6">
           <img

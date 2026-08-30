@@ -1,160 +1,563 @@
-/* ===== Navbar Wrapper ===== */
+/* =========================
+   NAVBAR
+========================= */
+
 .navbar {
+  position: relative;
   width: 100%;
-  background-color: #fff;
-  border-bottom: 1px solid #eee;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  background: #ffffff;
+  z-index: 1100;
+  border-bottom: 1px solid #eeeeee;
 }
 
-/* Navbar Container */
 .navbar-container {
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1450px;
+  height: 80px;
+
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0 40px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  box-sizing: border-box;
 }
 
-/* ===== Logo ===== */
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
 .logo img {
-  height: 50px;
+  display: block;
+  width: auto;
+  max-width: 180px;
+  height: 60px;
+  object-fit: contain;
 }
 
-/* ===== Desktop Menu ===== */
+
+/* =========================
+   DESKTOP MENU
+========================= */
+
 .desktop-menu {
   display: flex;
-  align-items: left;
-  gap: 1rem;
+  align-items: center;
+  height: 100%;
+  margin-left: auto;
 }
 
-/* Menu items and dropdown button shared styles */
 .menu-item,
 .dropdown-button {
-  background: none;
-  border: none;
-  font-size: 1rem;
-  color: #333;
-  cursor: pointer;
+  position: relative;
+
+  height: 100%;
+
+  padding: 0 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #222222;
+  background: transparent;
+
+  border: 0;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+
   text-decoration: none;
-  padding: 0.5rem;
-  transition: color 0.2s ease;
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition: color 0.18s ease;
 }
 
 .menu-item:hover,
-.dropdown-button:hover,
-.menu-item:focus-visible,
-.dropdown-button:focus-visible {
-  color: #007bff;
+.dropdown-button:hover {
+  color: #777777;
 }
 
-/* ===== Dropdown Styles ===== */
-.dropdown {
-  position: relative;
-}
 
-/* Base hidden state */
-.dropdown-menu {
-  display: none;
+/* active menu underline */
+
+.menu-item::after,
+.dropdown-button::after {
+  content: "";
+
   position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 0;
+
+  height: 2px;
+
+  background: #222222;
+
+  transform: scaleX(0);
+  transform-origin: center;
+
+  transition: transform 0.2s ease;
+}
+
+.menu-item:hover::after,
+.dropdown-button:hover::after,
+.menu-item.active-link::after,
+.dropdown-button.active-link::after {
+  transform: scaleX(1);
+}
+
+.active-link {
+  font-weight: 500;
+}
+
+
+/* =========================
+   SERVICES BUTTON
+========================= */
+
+.services-wrapper {
+  position: static;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-button {
+  gap: 5px;
+}
+
+.services-chevron {
+  transition: transform 0.22s ease;
+}
+
+.services-chevron.rotate {
+  transform: rotate(180deg);
+}
+
+
+/* =========================
+   DESKTOP SERVICES PANEL
+========================= */
+
+.desktop-services-panel {
+  position: absolute;
+
   top: 100%;
-  z-index: 999;
-}
-
-/* Full-width dropdown overrides */
-.dropdown-menu.full-width-dropdown {
   left: 0;
-  width: 100vw;
-  background-color: #fff;
-  padding: 2rem 4rem;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  border-top: 1px solid #ddd;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
-  align-items: start;
+
+  width: 100%;
+
+  background: #ffffff;
+
+  border-top: 1px solid #eeeeee;
+
+  box-shadow: 0 9px 20px rgba(0, 0, 0, 0.07);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(-7px);
+
+  pointer-events: none;
+
+  transition:
+    opacity 0.18s ease,
+    transform 0.22s ease,
+    visibility 0.18s ease;
+
+  z-index: 1200;
 }
 
-/* Show dropdown on .show class */
-.dropdown-menu.show {
+.desktop-services-panel.show {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateY(0);
+
+  pointer-events: auto;
+}
+
+
+/*
+  Services are NOT categorized.
+  CSS only arranges the existing items neatly.
+*/
+
+.desktop-services-inner {
+  max-width: 1380px;
+
+  margin: 0 auto;
+  padding: 28px 45px 34px;
+
   display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  column-gap: 45px;
+  row-gap: 0;
+
+  box-sizing: border-box;
 }
 
-/* Dropdown items */
-.dropdown-item {
-  font-size: 0.9rem;
-  padding: 0.3rem 0.5rem;
-  color: #333;
+.desktop-service-item {
+  position: relative;
+
+  display: block;
+
+  padding: 9px 4px;
+
+  color: #222222;
+
   text-decoration: none;
-  border-radius: 4px;
-  transition: background 0.2s ease;
+
+  font-size: 14px;
+  line-height: 1.4;
+
+  transition:
+    color 0.15s ease,
+    transform 0.15s ease;
 }
 
-.dropdown-item:hover,
-.dropdown-item:focus-visible {
-  background-color: #f0f0f0;
+.desktop-service-item:hover {
+  color: #777777;
+  text-decoration: underline;
 }
 
-/* ===== Cart Icon ===== */
-.cart-icon {
-  font-size: 20px;
-  color: #444;
-  cursor: pointer;
-  margin-left: 1rem;
+.desktop-service-item.active-link {
+  font-weight: 600;
 }
 
-/* ===== Mobile Menu Toggle Button ===== */
+
+/* =========================
+   DESKTOP OVERLAY
+========================= */
+
+.desktop-dropdown-overlay {
+  position: fixed;
+
+  top: 80px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background: rgba(0, 0, 0, 0.18);
+
+  opacity: 0;
+  visibility: hidden;
+
+  pointer-events: none;
+
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease;
+
+  z-index: 1000;
+}
+
+.desktop-dropdown-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* =========================
+   MOBILE TOGGLE
+========================= */
+
 .mobile-toggle {
   display: none;
-  background: none;
+
+  padding: 7px;
+
   border: none;
+
+  color: #222222;
+  background: transparent;
+
   cursor: pointer;
 }
 
-/* ===== Mobile Menu ===== */
+
+/* =========================
+   MOBILE MENU
+========================= */
+
 .mobile-menu {
   display: none;
-  flex-direction: column;
-  background-color: #fff;
-  padding: 1rem;
-  border-top: 1px solid #eee;
 }
 
-.mobile-section {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+body.mobile-menu-open {
+  overflow: hidden;
 }
 
-.mobile-item {
-  padding: 0.5rem 0;
-  text-decoration: none;
-  color: #333;
-  transition: background 0.2s ease;
-}
 
-.mobile-item:hover,
-.mobile-item:focus-visible {
-  background-color: #f8f8f8;
-}
+/* =========================
+   TABLET
+========================= */
 
-/* ===== Responsive (Mobile) ===== */
-@media screen and (max-width: 768px) {
-  .desktop-menu {
-    display: none;
+@media (max-width: 1150px) {
+  .navbar-container {
+    padding: 0 25px;
   }
+
+  .menu-item,
+  .dropdown-button {
+    padding-left: 9px;
+    padding-right: 9px;
+
+    font-size: 13px;
+  }
+
+  .menu-item::after,
+  .dropdown-button::after {
+    left: 9px;
+    right: 9px;
+  }
+
+  .desktop-services-inner {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+  .navbar {
+    position: relative;
+  }
+
+  .navbar-container {
+    height: 70px;
+
+    padding: 0 18px;
+  }
+
+  .logo img {
+    max-width: 145px;
+    height: 52px;
+  }
+
+
+  /* hide desktop */
+
+  .desktop-menu,
+  .desktop-services-panel,
+  .desktop-dropdown-overlay {
+    display: none !important;
+  }
+
+
+  /* hamburger */
 
   .mobile-toggle {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
+
+  /* main mobile menu */
 
   .mobile-menu {
-    display: flex;
+    display: block;
+
+    position: fixed;
+
+    top: 70px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    background: #ffffff;
+
+    overflow-y: auto;
+    overscroll-behavior: contain;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(-8px);
+
+    pointer-events: none;
+
+    transition:
+      opacity 0.22s ease,
+      transform 0.22s ease,
+      visibility 0.22s ease;
+
+    z-index: 1090;
   }
 
-  /* Dropdown becomes single column on small screens */
-  .dropdown-menu.full-width-dropdown {
-    grid-template-columns: 1fr;
-    padding: 1rem;
+  .mobile-menu.show {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+
+    pointer-events: auto;
+  }
+
+  .mobile-menu-inner {
+    width: 100%;
+
+    padding: 4px 20px 50px;
+
+    box-sizing: border-box;
+  }
+
+
+  /* main menu item */
+
+  .mobile-item,
+  .mobile-services-button {
+    width: 100%;
+    min-height: 58px;
+
+    padding: 0 4px;
+
+    display: flex;
+    align-items: center;
+
+    border: 0;
+    border-bottom: 1px solid #e9e9e9;
+
+    background: #ffffff;
+
+    color: #171717;
+
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+
+    text-align: left;
+    text-decoration: none;
+
+    box-sizing: border-box;
+
+    cursor: pointer;
+  }
+
+  .mobile-item.active-link,
+  .mobile-services-button.active-link {
+    font-weight: 600;
+  }
+
+
+  /* mobile Services */
+
+  .mobile-services {
+    width: 100%;
+  }
+
+  .mobile-services-button {
+    justify-content: space-between;
+  }
+
+
+  /*
+    Accordion animation.
+    Grid avoids using a hardcoded 1700px height.
+  */
+
+  .mobile-services-submenu {
+    display: grid;
+    grid-template-rows: 0fr;
+
+    opacity: 0;
+
+    transition:
+      grid-template-rows 0.3s ease,
+      opacity 0.2s ease;
+  }
+
+  .mobile-services-submenu.show {
+    grid-template-rows: 1fr;
+    opacity: 1;
+  }
+
+  .mobile-services-content {
+    min-height: 0;
+    overflow: hidden;
+
+    background: #f7f7f7;
+  }
+
+
+  /* services links */
+
+  .mobile-service-item {
+    display: block;
+
+    padding: 14px 20px;
+
+    border-bottom: 1px solid #e9e9e9;
+
+    color: #282828;
+
+    background: #f7f7f7;
+
+    font-size: 14px;
+    line-height: 1.35;
+
+    text-decoration: none;
+
+    transition: background 0.15s ease;
+  }
+
+  .mobile-service-item:hover {
+    background: #eeeeee;
+  }
+
+  .mobile-service-item.active-link {
+    font-weight: 600;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .navbar-container {
+    padding: 0 14px;
+  }
+
+  .mobile-menu-inner {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .mobile-item,
+  .mobile-services-button {
+    min-height: 56px;
+    font-size: 15px;
+  }
+
+  .mobile-service-item {
+    padding: 13px 16px;
+    font-size: 14px;
   }
 }
