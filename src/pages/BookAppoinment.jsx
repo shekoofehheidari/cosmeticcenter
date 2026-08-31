@@ -7,7 +7,6 @@ import policyimg from "../assets/images/policy-mcc-scaled.jpg";
 
 const BookAppoinment = () => {
   const navigate = useNavigate();
-
   const [showBooking, setShowBooking] = useState(false);
   const bookingRef = useRef(null);
 
@@ -22,8 +21,11 @@ const BookAppoinment = () => {
   useEffect(() => {
     if (!showBooking || !bookingRef.current) return;
 
-    // جلوگیری از اضافه شدن چندباره اسکریپت
-    bookingRef.current.innerHTML = "";
+    // Store the current ref value
+    const bookingContainer = bookingRef.current;
+
+    // Clear previous widget if necessary
+    bookingContainer.innerHTML = "";
 
     const script = document.createElement("script");
 
@@ -32,12 +34,10 @@ const BookAppoinment = () => {
 
     script.async = true;
 
-    bookingRef.current.appendChild(script);
+    bookingContainer.appendChild(script);
 
     return () => {
-      if (bookingRef.current) {
-        bookingRef.current.innerHTML = "";
-      }
+      bookingContainer.innerHTML = "";
     };
   }, [showBooking]);
 
